@@ -1,4 +1,13 @@
+// MIXINS
+@import 'abstract/mixins';
+
 // CONFIG
 @import 'base/reset';
 @import 'base/colors';
 @import 'base/typography.scss';
+
+// PAGES
+@import 'pages/home';
+
+// UTILITY CLASSES
+@import 'utility/layout'
