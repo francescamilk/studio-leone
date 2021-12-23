@@ -1,24 +1,16 @@
-# README
+// FIND ME ON
+> https://studiotticoleone.herokuapp.com/
+<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+// BRIEFING
 
-Things you may want to cover:
+This is the Window Website for Studio Ottico Leone, one of the oldest opticians in Turin.
+<br><br>
+The visual identity of this website is inspired by the classic optician tools such as the optometric table and the refractometer - hence the clean sharp lines and the prevalence of black and white.
+<br><br>
+Sporadic touches of color bring movement and excitement, to reflect the enthusiastic personality of Andrea, the owner, and his colorful frames.
+<br><br>
+// CREDITS
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Shoutout to the creators of Optician Sans for providing such a perfect typogaphy. <br>
+The photos in the header are from a 2019 Prada campaign.
