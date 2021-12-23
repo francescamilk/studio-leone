@@ -1,0 +1,25 @@
+// Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+// 1rem = 10px
+html {
+  // font-size: 10px;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
