@@ -4,8 +4,10 @@ header {
 }
 
 .headerCopy {
-  font-size: 9rem;
+  position: relative;
+  font-size: 8rem;
   margin-top: 8rem;
+  z-index: 10;
 }
 
 .headerImg {
@@ -15,17 +17,19 @@ header {
 }
 
 #headerOne {
-  width: 22rem;
+  width: 18rem;
 }
 
 #headerTwo {
-  width: 30rem;
+  width: 27rem;
 }
 
 #headerUnderline {
   position: absolute;
-  top: 29rem;
-  left: 9rem;
+  top: 26rem;
+  left: 8rem;
+  width: 80rem;
+  z-index: 1;
 
   // draft
   display: none;
