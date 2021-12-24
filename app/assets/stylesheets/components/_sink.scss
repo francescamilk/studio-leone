@@ -33,3 +33,12 @@
     }
   }
 }
+
+.blur {
+  cursor: url("https://i.stack.imgur.com/KDrS2.png"), auto;
+  filter: blur(1px);
+
+  &:hover {
+    filter: none;
+  }
+}
