@@ -1,10 +1,11 @@
 // MIXINS
 @import 'abstract/mixins';
+@import 'abstract/variables';
 
 // CONFIG
 @import 'base/reset';
 @import 'base/colors';
-@import 'base/typography.scss';
+@import 'base/typography';
 
 // COMPONENTS
 @import 'components/navbar';
@@ -14,4 +15,4 @@
 @import 'pages/home';
 
 // UTILITY CLASSES
-@import 'utility/layout'
+@import 'utility/layout';
