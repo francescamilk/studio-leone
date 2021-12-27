@@ -1,7 +1,8 @@
 <div class="container">
   <nav>
     <%= link_to root_path do %>
-      <i data-feather="eye"></i>
+      <%# <%= image_tag('logo-leone-new.png', id: 'logo') %>
+      <i data-feather="target" id="logoIcon"></i>
     <% end %>
     <ul class="navLinks">
       <li><%= link_to 'Lo studio', "#{root_path}#loStudio" %></li>

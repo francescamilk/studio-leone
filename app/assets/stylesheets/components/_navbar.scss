@@ -17,3 +17,16 @@ nav {
     border-bottom: 1.5px $SLyellow solid;
   }
 }
+
+// #logo {
+//   width: 8rem;
+// }
+
+#logoIcon {
+  fill: $SLred;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}

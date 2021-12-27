@@ -1,0 +1,33 @@
+header {
+  width: 100vw;
+  height: 90vh;
+}
+
+.headerCopy {
+  font-size: 8rem;
+  margin-top: 6rem;
+}
+
+.headerImg {
+  position: absolute;
+  bottom: -.2rem;
+  right: 0;
+}
+
+#headerOne {
+  width: 18rem;
+}
+
+#headerTwo {
+  width: 27rem;
+}
+
+#headerUnderline {
+  position: absolute;
+  top: 26rem;
+  left: 8rem;
+  width: 80rem;
+
+  // draft
+  display: none;
+}
