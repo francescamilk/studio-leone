@@ -1,0 +1,21 @@
+<section id="dashboard">
+  <div class="container">
+    <h1>Bentornato!</h1>
+    <h3>Occhiali attualmente in catalogo:</h3>
+    <% @glasses.each do |glass| %>
+      <%= link_to glass_path(glass) do %>
+        <li><%= glass.sku %> | 
+          <%= glass.name %> | 
+          <%= glass.brand %> |
+          <%= link_to edit_glass_path(glass) do %>
+            <i data-feather="edit-3"></i>
+          <% end %>
+          <%= link_to glass_path(glass), method: :delete, method: :delete, data: { confirm: "Delete #{glass.sku}?" } do %>
+            <i data-feather="trash-2"></i>
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+    <h4><%= link_to "Aggiungi occhiale", new_glass_path %></h4>
+  </div>
+</section>
