@@ -1,0 +1,16 @@
+<section id="index">
+  <div data-controller="refresh-list">
+    <div class="container">
+      <h1>I nostri occhiali</h1>
+      <div class="flex-between">
+        <h4><%= link_to 'Tutti', glasses_path(sort: 'all') %></h4>
+        <h4><%= link_to 'Da sole', glasses_path(sort: 'sun') %></h4>
+        <h4><%= link_to 'Da vista', glasses_path(sort: 'sight') %></h4>
+      </div>
+      <div data-refresh-list-target="list">
+        <%= render 'list' %>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

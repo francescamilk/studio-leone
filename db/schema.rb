@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_12_27_144535) do
     t.string "frame", null: false
     t.string "material", null: false
     t.string "measure", null: false
+    t.boolean "sunglasses", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

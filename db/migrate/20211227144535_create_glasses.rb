@@ -9,6 +9,8 @@ class CreateGlasses < ActiveRecord::Migration[6.1]
       t.string :frame, null: false
       t.string :material, null: false
       t.string :measure, null: false
+      t.boolean :sunglasses, default: false
+      
 
       t.timestamps
     end

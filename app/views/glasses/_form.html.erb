@@ -1,0 +1,23 @@
+<div class="container">
+  <%= simple_form_for(@glass) do |f| %>
+    <%= f.label :sku %>
+    <%= f.text_field :sku %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :brand %>
+    <%= f.text_field :brand %>
+    <%= f.label :price %>
+    <%= f.number_field :price, step: :any %>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+    <%= f.label :frame %>
+    <%= f.text_field :frame %>
+    <%= f.label :material %>
+    <%= f.text_field :material %>
+    <%= f.label :measure %>
+    <%= f.text_field :measure %>
+    <%= f.label :sunglasses %>
+    <%= f.input :sunglasses %>
+    <%= f.submit %>
+  <% end %>
+</div>
