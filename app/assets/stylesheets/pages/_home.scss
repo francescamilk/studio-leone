@@ -30,27 +30,59 @@ header {
   top: 26rem;
   left: 8rem;
   width: 80rem;
-  z-index: 1;
 
   // draft
   display: none;
 }
 
 // LOSTUDIO SECTION
-.copyLeft {
+.studioLeft {
   text-align: left;
 }
 
-.copyRight {
+.studioRight {
   text-align: right;
+
+  h2 {
+    margin: $smallSpace 0;
+  }
 }
 
 .compoLeft,
 .compoRight {
   display: flex;
+  margin: $smallSpace 0;
 }
+
 
 .redBox {
   background: $SLred;
   color: $SLwhite;
+  text-align: justify;
+  width: 30rem;
+  height: 30rem;
+  padding: 6rem;
+  transform: translateY(10rem);
+}
+
+.boxLeft {
+  margin-right: -10rem;
+}
+
+.boxRight {
+  margin-left: -10rem;
+}
+
+.copyLeft {
+  padding-right: 56rem;
+}
+
+.copyRight {
+  padding-left: 56rem;
+}
+
+#studioLeft,
+#studioRight {
+  width: 90rem;
+  height: 50rem;
 }
