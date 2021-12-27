@@ -83,6 +83,8 @@ header {
 
 .copyRight,
 .copyLeft {
+  margin-bottom: $bigSpace;
+
   h3 {
     margin: 1rem 0 2rem;
   }
@@ -104,6 +106,7 @@ header {
 #studioRight {
   width: 85rem;
   height: 50rem;
+  margin-bottom: $medSpace;
 }
 
 #studioUnderline,
