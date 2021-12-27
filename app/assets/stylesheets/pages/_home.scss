@@ -1,3 +1,4 @@
+// HEADER SECTION
 header {
   width: 100vw;
   height: 100vh;
@@ -33,4 +34,23 @@ header {
 
   // draft
   display: none;
+}
+
+// LOSTUDIO SECTION
+.copyLeft {
+  text-align: left;
+}
+
+.copyRight {
+  text-align: right;
+}
+
+.compoLeft,
+.compoRight {
+  display: flex;
+}
+
+.redBox {
+  background: $SLred;
+  color: $SLwhite;
 }
