@@ -9,13 +9,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <% unless admin_form? %>
+    <% unless admin_dash? || glass_form? %>
       <%= render 'shared/navbar' %>
     <% end %>
     <section id="bodyContent">
       <%= yield %>
     </section>
-    <% unless admin_form? %>
+    <% unless admin_dash? || glass_form? %>
       <%= render 'shared/footer' %>
     <% end %>
     <%# Feather Icons %>

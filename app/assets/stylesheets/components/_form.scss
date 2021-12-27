@@ -17,6 +17,8 @@ input {
 
   &.boolean {
     width: 1rem;
+    transform: scale(1.5);
+    margin: .5rem 0 1.5rem .2rem;
   }
 }
 
@@ -26,6 +28,15 @@ label {
 
 .boolean label {
     display: none;
+}
+
+#formTitle {
+  @include flex-around;
+  margin-bottom: 2rem;
+
+  label {
+    font-size: 1.4rem;
+  }
 }
 
 #formBtn {
@@ -39,4 +50,10 @@ label {
     font-size: 1.6rem;
     padding: .9rem 0;
   }
+}
+
+#formBack {
+  position: absolute;
+  bottom: 5vh;
+  right: 16vw;
 }
