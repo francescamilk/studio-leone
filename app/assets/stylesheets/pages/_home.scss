@@ -83,7 +83,7 @@ header {
 
 .copyRight,
 .copyLeft {
-  margin-bottom: $bigSpace;
+  margin-bottom: $medSpace;
 
   h3 {
     margin: 1rem 0 2rem;
@@ -106,7 +106,6 @@ header {
 #studioRight {
   width: 85rem;
   height: 50rem;
-  margin-bottom: $medSpace;
 }
 
 #studioUnderline,
@@ -117,10 +116,27 @@ header {
 
 #studioUnderline {
   width: 34rem;
-  transform: translate(-.5rem, -1.3rem);
+  transform: translate(-.4rem, -1.4rem);
 }
 
 #missionUnderline {
   width: 37rem;
-  transform: translate(1.2rem, -1.3rem);
+  transform: translate(1.2rem, -1.4rem);
+}
+
+// MAP SECTION
+#findUs {
+  h2 {
+    position: relative;
+    z-index: 10;
+  }
+
+  iframe {
+    margin: $smallSpace 0 $bigSpace;
+  }
+}
+
+#findUsUnderline {
+  width: 31rem;
+  transform: translate(-.4rem, -1.3rem);
 }

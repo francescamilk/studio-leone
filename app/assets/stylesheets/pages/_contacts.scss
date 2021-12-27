@@ -1,0 +1,25 @@
+.contacts {
+  @include flex-between;
+}
+
+.contactsLeft {
+  width: 40%;
+  padding-right: 2rem;
+  text-align: right;
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  svg {
+    fill: $SLyellow;
+  }
+}
+
+.phone {
+  margin: 2rem 0;
+}
+
+.contactsRight {
+  width: 60%;
+}
