@@ -5,5 +5,12 @@ nav {
 
 .navLinks li {
   display: inline-block;
-  padding-left: 2rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $SLred;
+    font-size: 1.3rem;
+    border-bottom: 1.5px $SLyellow solid;
+  }
 }

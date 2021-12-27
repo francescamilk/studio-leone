@@ -5,10 +5,8 @@ header {
 }
 
 .headerCopy {
-  position: relative;
   font-size: 8rem;
   margin-top: 8rem;
-  z-index: 10;
 }
 
 .headerImg {
@@ -36,6 +34,14 @@ header {
 }
 
 // LOSTUDIO SECTION
+.studioLeft,
+.studioRight {
+  h2 {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .studioLeft {
   text-align: left;
 }
@@ -44,7 +50,7 @@ header {
   text-align: right;
 
   h2 {
-    margin: $smallSpace 0;
+    margin-top: $smallSpace;
   }
 }
 
@@ -63,6 +69,8 @@ header {
   height: 34rem;
   padding: 6rem;
   transform: translateY(10rem);
+
+  @include flex-center;
 }
 
 .boxLeft {
@@ -96,4 +104,20 @@ header {
 #studioRight {
   width: 85rem;
   height: 50rem;
+}
+
+#studioUnderline,
+#missionUnderline {
+  position: relative;
+  z-index: 1;
+}
+
+#studioUnderline {
+  width: 34rem;
+  transform: translate(-.5rem, -1.3rem);
+}
+
+#missionUnderline {
+  width: 37rem;
+  transform: translate(1.2rem, -1.3rem);
 }
