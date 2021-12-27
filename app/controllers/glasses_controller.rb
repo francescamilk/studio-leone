@@ -27,7 +27,7 @@ class GlassesController < ApplicationController
   def create
     @glass = Glass.new(glass_params)
     if @glass.save!
-      redirect_to glass_path(@glass)
+      redirect_to admin_dash_path
     else
       render :new
     end
@@ -45,6 +45,7 @@ class GlassesController < ApplicationController
   # permit only if admin
   def destroy
     @glass.destroy
+    redirect_to admin_dash_path
   end
 
   private

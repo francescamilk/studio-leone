@@ -1,4 +1,4 @@
-<div class="container">
+<section id="form">
   <%= simple_form_for(@glass) do |f| %>
     <%= f.label :sku %>
     <%= f.text_field :sku %>
@@ -18,6 +18,6 @@
     <%= f.text_field :measure %>
     <%= f.label :sunglasses %>
     <%= f.input :sunglasses %>
-    <%= f.submit %>
+    <%= f.button :submit, id: 'formBtn' %>
   <% end %>
-</div>
+</section>

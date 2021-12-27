@@ -9,6 +9,11 @@
   justify-content: space-between;
 }
 
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 @mixin flex-align-center {
   display: flex;
   align-items: center;

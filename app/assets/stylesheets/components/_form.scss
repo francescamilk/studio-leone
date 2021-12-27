@@ -1,0 +1,42 @@
+#form {
+  height: 100vh;
+
+  @include flex-around;
+  @include flex-align-center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 45rem;
+  margin-bottom: 1rem;
+  padding: .3rem;
+
+  &.boolean {
+    width: 1rem;
+  }
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.boolean label {
+    display: none;
+}
+
+#formBtn {
+  border: none;
+  padding: 1rem 0;
+  background: $SLyellow;
+  font-family: 'Optician-sans';
+  cursor: pointer;
+
+  &:hover {
+    font-size: 1.6rem;
+    padding: .9rem 0;
+  }
+}
