@@ -13,8 +13,10 @@ li {
 
 a,
 a:hover {
+  position: relative;;
   text-decoration: none;
   color: inherit;
+  z-index: 1001;
 }
 
 // 1rem = 10px

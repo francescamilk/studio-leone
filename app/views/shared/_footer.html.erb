@@ -6,9 +6,15 @@
         <br>
         <h4>studio.otticaleone@gmail.com</h4>
         <div class="footSocial">
-          <i data-feather="instagram"></i>
-          <i data-feather="facebook"></i>
-          <i data-feather="map-pin"></i>
+          <%= link_to('https://www.instagram.com/studiotticoleone/', target: '_blank') do %>
+            <i data-feather="instagram"></i>
+          <% end %>
+          <%= link_to('https://www.facebook.com/Studio-Ottico-Leone-557133564331753', target: '_blank') do %>
+            <i data-feather="facebook"></i>
+          <% end %>
+          <%= link_to contatti_path do %>
+            <i data-feather="map-pin"></i>
+          <% end %>
         </div>
       </div>
       <div class="footAddress">
