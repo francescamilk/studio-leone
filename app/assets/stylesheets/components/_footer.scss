@@ -1,0 +1,42 @@
+.footContent {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+}
+
+.footAddress {
+  padding-left: 16rem;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+.footSocial {
+  margin-top: 1.5rem;
+
+  @include flex-between;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+#footShape {
+  background: $SLblack;
+  height: 6rem;
+  width: 50rem;
+  position: absolute;
+  right: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 42rem;
+    border-top: 6rem solid $SLwhite;
+    border-left: 8rem solid $SLblack;
+    transform: rotate(180deg);
+    width: 0;
+  }
+}
