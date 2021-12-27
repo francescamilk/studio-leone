@@ -1,7 +1,9 @@
 nav {
   height: 10vh;
   text-align: right;
-  padding-top: 4rem;
+  padding: 4rem 0 5rem 0;
+  
+  @include flex-center;
 }
 
 .navLinks li {
@@ -11,7 +13,7 @@ nav {
 
   &:hover {
     color: $SLred;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     border-bottom: 1.5px $SLyellow solid;
   }
 }

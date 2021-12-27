@@ -1,5 +1,8 @@
 <div class="container">
   <nav>
+    <%= link_to root_path do %>
+      <i data-feather="eye"></i>
+    <% end %>
     <ul class="navLinks">
       <li><%= link_to 'Lo studio', "#{root_path}#loStudio" %></li>
       <li><%= link_to 'Servizi', "#{root_path}#servizi" %></li>
