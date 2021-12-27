@@ -34,12 +34,12 @@
   height: 34rem;
   padding: 6rem;
   transform: translateY(10rem);
+  z-index: 1000;
 
   @include flex-center;
 
   &:hover {
     background: none;
-    background-image: image-url('andrea-leone.jpg');
     background-size: cover;
 
     p {
@@ -50,10 +50,18 @@
 
 .boxLeft {
   margin-right: -10rem;
+
+  &:hover {
+    background-image: image-url('flipLeft.jpg');
+  }
 }
 
 .boxRight {
   margin-left: -10rem;
+
+  &:hover {
+    background-image: image-url('flipRight.jpg');
+  }
 }
 
 .copyRight,

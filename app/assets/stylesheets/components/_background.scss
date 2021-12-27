@@ -2,7 +2,6 @@
   position: fixed;
   bottom: 0;
   left: 6.7vw;
-  z-index: 999;
   opacity: .1;
 }
 
@@ -11,9 +10,8 @@
 
   h1 {
     font-size: 20rem;
-    color: #b8b8b8;
-    border-left: 1px solid #b8b8b8;
-    border-right: 1px solid #b8b8b8;
+    color: #bfbfbf;
+    border: 1px solid #949494;
     display: flex;
     align-items: flex-end;
     height: 100vh;
