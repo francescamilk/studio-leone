@@ -1,7 +1,6 @@
 .footContent {
-  height: 16rem;
+  height: 10rem;
   display: flex;
-  align-items: center;
 }
 
 .footAddress {
@@ -17,14 +16,15 @@
 
   @include flex-between;
 
-  i {
+  svg {
     cursor: pointer;
+    width: 1.8rem;
   }
 }
 
 #footShape {
   background: $SLblack;
-  height: 6rem;
+  height: 6.5rem;
   width: 50rem;
   position: absolute;
   right: 0;
@@ -34,7 +34,7 @@
     position: absolute;
     top: 0; 
     right: 42rem;
-    border-top: 6rem solid $SLwhite;
+    border-top: 6.5rem solid $SLwhite;
     border-left: 8rem solid $SLblack;
     transform: rotate(180deg);
     width: 0;
