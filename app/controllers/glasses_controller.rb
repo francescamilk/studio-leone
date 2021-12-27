@@ -1,0 +1,2 @@
+class GlassesController < ApplicationController
+end
