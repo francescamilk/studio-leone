@@ -22,6 +22,7 @@ Glass.destroy_all
 
 # ARMANI
 puts 'Loading Armani catalog...'
+seed_csv("armani")
 
 # MIU MIU 
 puts 'Loading Miu Miu catalog...'
