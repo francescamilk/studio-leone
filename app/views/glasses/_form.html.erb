@@ -23,6 +23,7 @@
     <%= f.input :sunglasses %>
     <%= f.label :woman %>
     <%= f.input :woman %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.button :submit, "Aggiungi occhiale", id: 'formBtn' %>
   <% end %>
 </section>

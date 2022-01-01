@@ -58,6 +58,6 @@ class GlassesController < ApplicationController
   end
 
   def glass_params
-    params.require(:glass).permit(:sku, :name, :brand, :color, :price, :frame, :material, :measure, :sunglasses, :woman)
+    params.require(:glass).permit(:sku, :name, :brand, :color, :price, :frame, :material, :measure, :sunglasses, :woman, photos: [])
   end
 end

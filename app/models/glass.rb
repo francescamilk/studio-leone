@@ -2,6 +2,8 @@ class Glass < ApplicationRecord
   validates :sku, uniqueness: { case_sensitive: false }
   validates :sku, :brand, :price, :color, :frame, :material, :measure, presence: true
 
+  has_many_attached :photos
+
   scope :sun, -> { where(sunglasses: true) }
   scope :sight, -> { where(sunglasses: false) }
 
