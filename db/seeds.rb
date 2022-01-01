@@ -20,20 +20,17 @@ end
 puts 'Clearing db...'
 Glass.destroy_all
 
-puts 'Loading Armani catalog...'
 # ARMANI
+puts 'Loading Armani catalog...'
 
-puts 'Loading Gucci catalog...'
-# GUCCI
-
-puts 'Loading Miu Miu catalog...'
 # MIU MIU 
+puts 'Loading Miu Miu catalog...'
 
-puts 'Loading Persol catalog...'
 # PERSOL
+puts 'Loading Persol catalog...'
 
-puts 'Loading Vogue catalog...'
 # VOGUE
+puts 'Loading Vogue catalog...'
 seed_csv("vogue")
 
 puts 'All done!'
