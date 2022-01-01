@@ -3,7 +3,7 @@ nav {
   text-align: right;
   padding: 4rem 0 8rem 0;
   
-  @include flex-center;
+  @include flexCenter;
 }
 
 .navLinks li {

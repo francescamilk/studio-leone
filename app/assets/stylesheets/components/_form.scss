@@ -1,13 +1,16 @@
 #form {
   height: 100vh;
 
-  @include flex-around;
-  @include flex-align-center;
+  @include flexAround;
+  @include flexAlignCenter;
 }
 
+// z-index > background
 form {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1001;
 }
 
 input {
@@ -31,7 +34,7 @@ label {
 }
 
 #formTitle {
-  @include flex-around;
+  @include flexAround;
   margin-bottom: 2rem;
 
   label {
@@ -53,8 +56,5 @@ label {
 }
 
 #formBack {
-  text-align: right;
-  position: absolute;
-  bottom: 5vh;
-  right: 16vw;
+  @include clicktrough;
 }

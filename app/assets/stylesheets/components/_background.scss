@@ -3,10 +3,11 @@
   bottom: 0;
   left: 6.7vw;
   opacity: .1;
+  z-index: 999;
 }
 
 .backGrid {
-  @include flex-between;
+  @include flexBetween;
 
   h1 {
     font-size: 20rem;

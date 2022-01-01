@@ -17,7 +17,7 @@ footer {
 .footSocial {
   margin-top: 1.5rem;
 
-  @include flex-between;
+  @include flexBetween;
 
   svg {
     cursor: pointer;
