@@ -23,3 +23,15 @@
 .contactsRight {
   width: 60%;
 }
+
+#cursor {
+  width: 18rem;
+  height: 18rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  mix-blend-mode: difference;
+}

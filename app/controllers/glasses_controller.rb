@@ -4,10 +4,12 @@ class GlassesController < ApplicationController
   def index
     @glasses = Glass.all
 
-    case params[:sort]
+    case params[:s]
     when "all" then @glasses
     when "sun" then @glasses = @glasses.sun
     when "sight" then @glasses = @glasses.sight
+    when "women" then @glasses.women
+    when "men" then @glasses.men
     end
 
     respond_to do |format|
@@ -55,6 +57,6 @@ class GlassesController < ApplicationController
   end
 
   def glass_params
-    params.require(:glass).permit(:sku, :name, :brand, :color, :price, :frame, :material, :measure, :sunglasses)
+    params.require(:glass).permit(:sku, :name, :brand, :color, :price, :frame, :material, :measure, :sunglasses, :woman)
   end
 end

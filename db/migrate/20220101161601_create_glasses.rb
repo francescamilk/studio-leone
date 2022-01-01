@@ -10,7 +10,7 @@ class CreateGlasses < ActiveRecord::Migration[6.1]
       t.string :material, null: false
       t.string :measure, null: false
       t.boolean :sunglasses, default: false
-      
+      t.boolean :woman, default: true
 
       t.timestamps
     end

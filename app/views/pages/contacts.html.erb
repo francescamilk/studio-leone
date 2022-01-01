@@ -26,3 +26,35 @@
     </div>
   </div>
 </section>
+<div id="cursor"></div>
+<script>
+  const cursor = document.getElementById('cursor');
+  
+  let mouseX = 0;
+  let mouseY = 0;
+  
+  let cursorX = 0;
+  let cursorY = 0;
+  
+  let speed = 0.5;
+  
+  function animate() {
+    let distX = mouseX - cursorX;
+    let distY = mouseY - cursorY;
+  
+    cursorX = cursorX + (distX * speed);
+    cursorY = cursorY + (distY * speed);
+  
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+  
+    requestAnimationFrame(animate);
+  };
+  
+  animate();
+  
+  document.addEventListener('mousemove', (event) => {
+    mouseX = event.pageX;
+    mouseY = event.pageY;
+  });
+</script>

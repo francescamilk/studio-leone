@@ -3,9 +3,9 @@
     <div class="container">
       <h1>I nostri occhiali</h1>
       <div class="flex-between">
-        <h4><%= link_to 'Tutti', glasses_path(sort: 'all') %></h4>
-        <h4><%= link_to 'Da sole', glasses_path(sort: 'sun') %></h4>
-        <h4><%= link_to 'Da vista', glasses_path(sort: 'sight') %></h4>
+        <h4><%= link_to 'Tutti', glasses_path(s: 'all') %></h4>
+        <h4><%= link_to 'Da donna', glasses_path(s: 'women') %></h4>
+        <h4><%= link_to 'Da uomo', glasses_path(s: 'men') %></h4>
       </div>
       <div data-refresh-list-target="list">
         <%= render 'list' %>

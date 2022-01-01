@@ -11,3 +11,10 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// import { initUnblur } from "../plugins/initUnblur";
+
+// Plugins
+// document.addEventListener('turbolinks:load', () => {
+//   initUnblur();
+// });
