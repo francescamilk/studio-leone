@@ -1,14 +1,14 @@
 <div class="index-grid">
   <% @glasses.each do |glass| %>
     <div class="index-card">
-      <%= link_to glass_path(glass) do %>
-        <li>
+      <li>
+        <%= link_to glass_path(glass) do %>
           <%= glass.sku %> | 
           <%= glass.name %> | 
           <%= glass.brand %> |
           <%= glass.sunglasses? ? "Da sole" : "Da vista" %>
-        </li>
-      </div>
-    <% end %>
+        <% end %>
+      </li>
+    </div>
   <% end %>
 </div>

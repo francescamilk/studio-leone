@@ -1,5 +1,6 @@
 <section id="show">
   <div class="container">
-    <h1><%= @glass.name %></h1>
+    <h1><%= @glass.sku %></h1>
+    <%= cl_image_tag @glass.photos.last.key %>
   </div>
 </section>
