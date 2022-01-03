@@ -5,17 +5,29 @@
     <h4 class="glassSku">Codice modello: <%= @glass.sku %></h4>
     <div class="glassDetails">
       <h4>
-        Colore: <%= @glass.color %> <br>
-        Montatura: <%= @glass.frame %> <br>
-        Materiale: <%= @glass.material %> <br>
-        Misura: <%= @glass.measure %> <br>
+        Colore:&nbsp; <%= @glass.color %> <br>
+        Montatura:&nbsp; <%= @glass.frame %> <br>
+        Materiale:&nbsp; <%= @glass.material %> <br>
+        Misura:&nbsp; <%= @glass.measure %> <br>
       </h4>
     </div>
     <h3 class="glassPrice">€ <%= @glass.price == @glass.price.to_i ? @glass.price.to_i : @glass.price.round(2) %></h3>
     <%= link_to "Richiedi disponibilita'", "#", class: "animatedBtn" %>
-    <div class="glassSocial">
-      <i data-feather="instagram"></i>
-      <i data-feather="facebook"></i>
+    <div class="glassIcons">
+      <div class="glassClicktrough">
+        <%= link_to request.referer.present? ? request.referer : glasses_path do %>
+          <h5>Indietro</h5>
+          <i data-feather="corner-down-left"></i>
+        <% end %>
+      </div>
+      <div class="glassSocial">
+        <%= link_to('#', target: '_blank') do %>
+          <i data-feather="facebook"></i>
+        <% end %>
+        <%= link_to('#', target: '_blank') do %>
+          <i data-feather="instagram"></i>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>

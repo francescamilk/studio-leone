@@ -19,6 +19,10 @@
 .showRight {
   width: 45vw;
   padding: 4rem 6rem 4rem 4rem;
+
+  h4 {
+    letter-spacing: .1rem;
+  }
 }
 
 .glassSku {
@@ -26,11 +30,28 @@
 }
 
 .glassPrice {
-  margin: 3rem 0 9rem; 
+  margin: 3rem 0 8rem; 
+}
+
+.glassIcons {
+  width: 100%;
+  margin-top: 10rem;
+
+  @include flexBetween;
+  align-items: center;
 }
 
 .glassSocial {
-  width: 100%;
-  margin-top: 9rem;
-  text-align: right;
+  svg {
+    width: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      fill: $SLyellow;
+    }
+
+    &:nth-child(1) {
+      margin-left: 1rem;
+    }
+  }
 }

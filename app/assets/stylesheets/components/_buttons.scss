@@ -3,10 +3,11 @@
 	background: none;
 	border: none;
 	position: relative;
+	font-size: 1.1rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 3px;
-	// background: $SLyellow;
+	background: $SLyellow;
 	cursor: pointer;
 
 	&:after, &:before {

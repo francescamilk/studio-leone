@@ -19,7 +19,7 @@ module ApplicationHelper
     admin_dash? || glass_form? || glass_show?
   end
 
-  def no_background?
-    glass_show?
-  end
+  # def no_background?
+  #   glass_show?
+  # end
 end
