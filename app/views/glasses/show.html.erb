@@ -1,5 +1,17 @@
 <section id="show">
-  <div class="container">
-    <h1><%= @glass.sku %> <%= @glass.brand %></h1>
+  <div class="showLeft"><%= cl_image_tag @glass.photos.first.key %></div>
+  <div class="showRight">
+    <h1><%= @glass.brand %> - <%= @glass.name.present? ? @glass.name : @glass.sku %></h1>
+    <h4>Codice modello: <%= @glass.sku %></h4>
+    <div class="glassDetails">
+      <h4>
+        Colore: <%= @glass.color %> <br>
+        Montatura: <%= @glass.frame %> <br>
+        Materiale: <%= @glass.material %> <br>
+        Misura: <%= @glass.measure %> <br>
+      </h4>
+    </div>
+    <h3>€ <%= @glass.price == @glass.price.to_i ? @glass.price.to_i : @glass.price.round(2) %></h3>
+    <%= link_to "Richiedi disponibilita'", "#", class: "animatedBtn" %>
   </div>
 </section>
