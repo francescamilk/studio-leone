@@ -1,4 +1,8 @@
 // LOSTUDIO SECTION
+#loStudio {
+  padding-bottom: $smallSpace;
+}
+
 .studioLeft,
 .studioRight {
   h2 {
@@ -46,7 +50,8 @@
 
 .copyRight,
 .copyLeft {
-  margin-bottom: $medSpace;
+  padding-top: $smallSpace;
+  padding-bottom: $smallSpace;
 
   h3 {
     margin: 1rem 0 2rem;
@@ -124,6 +129,8 @@
 
 // MAP SECTION
 #findUs {
+  padding-top: $smallSpace;
+  
   h2 {
     position: relative;
     z-index: 10;
