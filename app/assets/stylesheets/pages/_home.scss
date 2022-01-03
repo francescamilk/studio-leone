@@ -25,11 +25,6 @@
   margin: $smallSpace 0;
 }
 
-.compoLeftPic {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .redBox {
   background: $SLred;
   color: $SLwhite;
@@ -70,6 +65,7 @@
   padding-left: 42rem;
 }
 
+// Flip card
 .cardFront, 
 .cardBack {
   overflow:hidden;
@@ -88,6 +84,20 @@
 
 .cardBack{
   transform:rotateY(180deg);
+
+  @include flexAlignCenter;
+  justify-content: center;
+}
+
+// Adjustments
+.compoLeftPic {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(-4rem)
+}
+
+.compoTitleLeft {
+  margin-bottom: 4rem;
 }
 
 #studioLeft,
