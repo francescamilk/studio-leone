@@ -25,6 +25,10 @@
   margin: $smallSpace 0;
 }
 
+.compoLeftPic {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .redBox {
   background: $SLred;
@@ -33,35 +37,16 @@
   width: 34rem;
   height: 34rem;
   padding: 6rem;
-  transform: translateY(10rem);
   z-index: 1000;
-
-  @include flexCenter;
-
-  &:hover {
-    background: none;
-    background-size: cover;
-
-    p {
-      display: none;
-    }
-  }
+  cursor: pointer;
 }
 
 .boxLeft {
   margin-right: -10rem;
-
-  &:hover {
-    background-image: image-url('flipLeft.jpg');
-  }
 }
 
 .boxRight {
   margin-left: -10rem;
-
-  &:hover {
-    background-image: image-url('flipRight.jpg');
-  }
 }
 
 .copyRight,
@@ -83,6 +68,26 @@
 
 .copyRight {
   padding-left: 42rem;
+}
+
+.cardFront, 
+.cardBack {
+  overflow:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+
+.flipCard:hover > .cardFront{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.flipCard:hover > .cardBack{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.cardBack{
+  transform:rotateY(180deg);
 }
 
 #studioLeft,

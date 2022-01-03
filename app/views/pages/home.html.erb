@@ -5,13 +5,18 @@
       <h2>Il nostro studio</h2>
       <%= image_tag('underline.png', id: 'studioUnderline') %>
       <div class="compoLeft">
-        <div class="redBox boxLeft">
-          <p>
-            Studio Ottico Leone viene fondato, nel 1968, dal Sig. Guido Leone che apre la sua prima impresa individuale nel cuore di Torino, sulla via Garibaldi. <br>
-            <br>
-            Nel 1970 il negozio di ottica si trasferisce in piazza Statuto 5/A, nei locali che attualmente ospitano l’attività.
-          </p>
+        <div class="flipCard">
+          <div class="redBox boxLeft cardFront">
+            <p>
+              Studio Ottico Leone viene fondato, nel 1968, dal Sig. Guido Leone che apre la sua prima impresa individuale nel cuore di Torino, sulla via Garibaldi. <br>
+              <br>
+              Nel 1970 il negozio di ottica si trasferisce in piazza Statuto 5/A, nei locali che attualmente ospitano l’attività.
+            </p>
+          </div>
+          <div class="redBox boxLeft cardBack"><%= image_tag('flipLeft.jpg') %></div>
         </div>
+      </div>
+      <div class="compoLeftPic">
         <%= image_tag('studioOut.jpg', id: 'studioLeft') %>
       </div>
       <div class="copyLeft">
@@ -35,12 +40,15 @@
       <%= image_tag('underline.png', id: 'missionUnderline') %>
       <div class="compoRight">
         <%= image_tag('studioIn.jpg', id: 'studioRight') %>
-        <div class="redBox boxRight">
-          <p>
-            Nel tempo, il progresso ha prodotto e favorito un profondo cambiamento. Il mondo dell’ottica è approdato in un’era di nuovi materiali e tecnologie. <br>
-            <br>
-            Il modo di operare di Studio Ottico Leone è attento a questa evoluzione per offrire un servizio professionale ed aggiornato.
-          </p>
+        <div class="flipCard">
+          <div class="redBox boxRight cardFront">
+            <p>
+              Nel tempo, il progresso ha prodotto e favorito un profondo cambiamento. Il mondo dell’ottica è approdato in un’era di nuovi materiali e tecnologie. <br>
+              <br>
+              Il modo di operare di Studio Ottico Leone è attento a questa evoluzione per offrire un servizio professionale ed aggiornato.
+            </p>
+          </div>
+          <div class="redBox boxRight cardBack"><%= image_tag('flipRight.jpg') %></div>
         </div>
       </div>
       <div class="copyRight">

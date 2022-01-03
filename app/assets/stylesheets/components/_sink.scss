@@ -1,3 +1,23 @@
+// FLIPCARD
+.card{
+  cursor: pointer;
+}
+.front, .back{
+  overflow:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  transform:rotateY(180deg);
+}
+
 // BLUR/FOCUS EFFECT
 .blur {
   cursor: url("https://i.stack.imgur.com/KDrS2.png"), auto;

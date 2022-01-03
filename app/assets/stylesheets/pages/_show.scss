@@ -6,7 +6,7 @@
 
 .showLeft {
   width: 55vw;
-  background: $SLblack;
+  // background: $SLblack;
   padding: 4rem;
 
   @include flexAlignCenter;
@@ -54,7 +54,7 @@
     cursor: pointer;
 
     &:hover {
-      fill: $SLyellow;
+      fill: $SLblue;
     }
 
     &:nth-child(1) {
