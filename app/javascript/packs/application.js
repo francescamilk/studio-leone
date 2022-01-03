@@ -12,9 +12,8 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-// import { initUnblur } from "../plugins/initUnblur";
+// Stimulus
+import "controllers"
 
-// Plugins
-// document.addEventListener('turbolinks:load', () => {
-//   initUnblur();
-// });
+// Stimulus carousel
+import 'swiper/swiper-bundle.min.css'

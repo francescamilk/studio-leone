@@ -11,9 +11,15 @@
 
   @include flexAlignCenter;
 
+  .swiper-slide,
   img {
     margin: 0 auto;
     width: 64rem;
+    text-align: center;
+  }
+
+  .swiper-container {
+    z-index: 1001;
   }
 }
 

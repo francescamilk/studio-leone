@@ -1,5 +1,21 @@
 <section id="show">
-  <div class="showLeft"><%= cl_image_tag @glass.photos.first.key %></div>
+  <div class="showLeft">
+    <div data-controller="carousel" class="swiper-container"
+    data-carousel-options-value='{
+    "pagination": { "el": ".swiper-pagination", 
+                    "dynamicBullets": "true" },
+    "navigation": { "nextEl": ".swiper-button-next", 
+                    "prevEl": ".swiper-button-prev"}}'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><%= cl_image_tag @glass.photos[0].key %></div>
+        <div class="swiper-slide"><%= cl_image_tag @glass.photos[1].key %></div>
+        <div class="swiper-slide"><%= cl_image_tag @glass.photos[2].key %></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
   <div class="showRight">
     <h1><%= @glass.brand %> - <%= @glass.name.present? ? @glass.name : @glass.sku %></h1>
     <h4 class="glassSku">Codice modello: <%= @glass.sku %></h4>
