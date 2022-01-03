@@ -2,7 +2,7 @@
   <div class="showLeft"><%= cl_image_tag @glass.photos.first.key %></div>
   <div class="showRight">
     <h1><%= @glass.brand %> - <%= @glass.name.present? ? @glass.name : @glass.sku %></h1>
-    <h4>Codice modello: <%= @glass.sku %></h4>
+    <h4 class="glassSku">Codice modello: <%= @glass.sku %></h4>
     <div class="glassDetails">
       <h4>
         Colore: <%= @glass.color %> <br>
@@ -11,7 +11,11 @@
         Misura: <%= @glass.measure %> <br>
       </h4>
     </div>
-    <h3>€ <%= @glass.price == @glass.price.to_i ? @glass.price.to_i : @glass.price.round(2) %></h3>
+    <h3 class="glassPrice">€ <%= @glass.price == @glass.price.to_i ? @glass.price.to_i : @glass.price.round(2) %></h3>
     <%= link_to "Richiedi disponibilita'", "#", class: "animatedBtn" %>
+    <div class="glassSocial">
+      <i data-feather="instagram"></i>
+      <i data-feather="facebook"></i>
+    </div>
   </div>
 </section>

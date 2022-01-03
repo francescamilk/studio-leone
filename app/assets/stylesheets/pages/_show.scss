@@ -1,0 +1,36 @@
+#show {
+  height: 100vh;
+
+  @include flexBetween;
+}
+
+.showLeft {
+  width: 55vw;
+  background: $SLblack;
+  padding: 4rem;
+
+  @include flexAlignCenter;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.showRight {
+  width: 45vw;
+  padding: 4rem 6rem 4rem 4rem;
+}
+
+.glassSku {
+  margin: 3rem 0;
+}
+
+.glassPrice {
+  margin: 3rem 0 9rem; 
+}
+
+.glassSocial {
+  width: 100%;
+  margin-top: 9rem;
+  text-align: right;
+}
