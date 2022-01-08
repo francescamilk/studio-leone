@@ -36,3 +36,12 @@ puts 'Loading Vogue catalog...'
 seed_csv("vogue")
 
 puts 'All done!'
+
+# temporary images
+Glass.all.each do |glass|
+  glass.photos.attach(io: File.open("./01_01.png"), filename: "01_01.png", content_type: "image/png")
+  glass.photos.attach(io: File.open("./01_02.png"), filename: "01_02.png", content_type: "image/png")
+  glass.photos.attach(io: File.open("./01_03.png"), filename: "01_03.png", content_type: "image/png")
+  glass.photos.attach(io: File.open("./01_04.png"), filename: "01_04.png", content_type: "image/png")
+  glass.photos.attach(io: File.open("./01_05.png"), filename: "01_05.png", content_type: "image/png")
+end
