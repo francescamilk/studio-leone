@@ -8,9 +8,13 @@
     "navigation": { "nextEl": ".swiper-button-next", 
                     "prevEl": ".swiper-button-prev"}}'>
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><%= cl_image_tag @glass.photos[0].key %></div>
-        <div class="swiper-slide"><%= cl_image_tag @glass.photos[1].key %></div>
-        <div class="swiper-slide"><%= cl_image_tag @glass.photos[2].key %></div>
+        <%# HEROKU QUICKFIX %>
+        <div class="swiper-slide"><%= image_tag('01_01.png') %></div>
+        <div class="swiper-slide"><%= image_tag('01_02.png') %></div>
+        <div class="swiper-slide"><%= image_tag('01_03.png') %></div>
+        <div class="swiper-slide"><%= image_tag('01_04.png') %></div>
+        <div class="swiper-slide"><%= image_tag('01_05.png') %></div>
+        <%# END %>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
