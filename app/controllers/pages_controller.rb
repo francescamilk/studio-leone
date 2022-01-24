@@ -4,7 +4,9 @@ class PagesController < ApplicationController
 
   def contacts; end
   
-  def sink; end
+  def sink;
+    @glasses = Glass.all
+  end
   
   # permit only if admin
   def dashboard

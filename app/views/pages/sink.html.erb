@@ -1,19 +1,20 @@
 <div class="container">
-  <div class="compoLeft">
-    <div class="card">
-      <div class="redBox boxLeft front">
-        <p>
-          Studio Ottico Leone viene fondato, nel 1968, dal Sig. Guido Leone che apre la sua prima impresa individuale nel cuore di Torino, sulla via Garibaldi. <br>
-          <br>
-          Nel 1970 il negozio di ottica si trasferisce in piazza Statuto 5/A, nei locali che attualmente ospitano l’attività.
-        </p>
-      </div>
-      <div class="back">OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!OK!</div>
+  <h2>Brand Name</h2>
+  <div class="index-block">
+    <i data-feather="chevron-left"></i>
+    <div class="glass-cards">
+      <% @glasses.take(4).each do |glass| %>
+        <div class="glass-card">
+          <%= image_tag(glass.photos.first, id: 'glassCardImg') %>
+          <h4 class="card-text"><%= glass.brand %> <%= glass.name %> <i data-feather="plus"></i></h4>
+          <h4>€<%= glass.price %></h4>
+        </div>
+      <% end %>
     </div>
-    <%= image_tag('studioOut.jpg', id: 'studioLeft') %>
+    <i data-feather="chevron-right"></i>
   </div>
 </div>
-<div class="container">
+<div class="container sink-none">
   <span class="animatedBtn">Dummy text!</span>
   <p class="blur">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices vulputate dui, sit amet venenatis ipsum tristique eu. In dapibus a sem et posuere. Duis sed suscipit nisl. Nunc efficitur quis risus nec eleifend. Fusce efficitur pulvinar sagittis. In porttitor sem et condimentum condimentum. Sed viverra cursus purus nec faucibus. Sed consequat ullamcorper metus, at porta lacus ullamcorper in. Aliquam et est et arcu sollicitudin pulvinar. Aliquam erat volutpat. Aliquam erat volutpat. Aenean nec euismod enim. Sed dictum massa eu leo tempor, sed faucibus mi sagittis.

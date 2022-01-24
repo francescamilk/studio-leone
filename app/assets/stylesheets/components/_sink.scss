@@ -92,3 +92,34 @@
     animation: shining 0.6s alternate infinite;
   }
 }
+
+// UTILITY
+.sink-none {
+  display: none;
+}
+
+// CARDS
+.index-block {
+  @include flexCenter;
+
+  svg {
+    width: 5rem;
+  }
+}
+
+.glass-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.glass-card {
+  padding: 2rem 5rem;
+}
+
+.card-text {
+  @include flexCenter;
+}
+
+#glassCardImg {
+  width: 35rem;
+}
