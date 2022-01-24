@@ -1,20 +1,12 @@
 const initAccordion = () => {
-  const items = document.querySelectorAll(".accordion button");
-
-  function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
-    var i = 0;
-
-    for (i = 0; i < items.length; i++) {
-      items[i].setAttribute('aria-expanded', 'false');
-    }
-
-    if (itemToggle == 'false') {
-      this.setAttribute('aria-expanded', 'true');
-    }
+  const accordion = document.getElementsByClassName('filterContent');
+  
+  var i = 0;
+  for (i = 0; i < accordion.length; i++){
+    accordion[i].addEventListener('click', function(){
+      this.classList.toggle('active');
+    })
   }
-
-  items.forEach(item => item.addEventListener('click', toggleAccordion));
 }
 
 export { initAccordion };

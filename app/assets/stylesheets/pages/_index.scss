@@ -31,20 +31,16 @@
 
 .stickyFilter {
   position: fixed;
-  
+  z-index: 1001;
+
   h3 {
     padding-bottom: 6rem;
   }
+}
 
-  h4 {
-    margin-top: .5rem;
-    z-index: 10001;
-    cursor: pointer;
-  }
-
-  svg {
-    width: 1.5rem;
-  }
+.pagyNav {
+  padding-top: $smallSpace;
+  margin-bottom: -$medSpace;
 }
 
 #glassCardImg {
@@ -58,4 +54,34 @@
 
 .afLabel {
   display: flex;
+
+  h4 {
+    margin-top: .5rem;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 1.5rem;
+    z-index: 1001;
+    cursor: pointer;
+  }
+}
+
+.filterContent { 
+  .afContent {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+  }
+}
+
+.active {
+  height: 10rem;
+}
+
+.active {
+  .afContent {
+    height: 10rem !important;
+  }
 }
