@@ -101,10 +101,6 @@
 // CARDS
 .index-block {
   @include flexCenter;
-
-  svg {
-    width: 5rem;
-  }
 }
 
 .glass-cards {
@@ -120,6 +116,10 @@
 
 .card-text {
   @include flexCenter;
+
+  svg {
+    width: 1.2rem;
+  }
 }
 
 #glassCardImg1 {

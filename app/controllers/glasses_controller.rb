@@ -4,14 +4,15 @@ class GlassesController < ApplicationController
   
   def index
     @glasses = Glass.all
+    @brands = [Glass.armani, Glass.vogue]
 
-    case params[:s]
-    when "all" then @glasses
-    when "sun" then @glasses = @glasses.sun
-    when "sight" then @glasses = @glasses.sight
-    when "women" then @glasses = @glasses.women
-    when "men" then @glasses = @glasses.men
-    end
+    # case params[:s]
+    # when "all" then @glasses
+    # when "sun" then @glasses = @glasses.sun
+    # when "sight" then @glasses = @glasses.sight
+    # when "women" then @glasses = @glasses.women
+    # when "men" then @glasses = @glasses.men
+    # end
 
     respond_to do |format|
       format.html

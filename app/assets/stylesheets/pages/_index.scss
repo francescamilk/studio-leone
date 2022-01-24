@@ -1,0 +1,32 @@
+// INDEX CARDS
+.index-block {
+  @include flexCenter;
+}
+
+.glass-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.glass-card {
+  padding: 2rem 5rem;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.card-text {
+  @include flexCenter;
+
+  svg {
+    width: 1.2rem;
+  }
+}
+
+#glassCardImg1 {
+  width: 35rem;
+}
+
+// OTHER
+.indexBrand {
+  padding-top: $bigSpace;
+}

@@ -14,4 +14,8 @@ class Glass < ApplicationRecord
 
   scope :price_by_high, -> { order(price: :desc) } 
   scope :price_by_low, -> { order(price: :asc) }
+
+  scope :armani, -> { where(brand: 'Armani') }
+  scope :miu_miu, -> { where(brand: 'Miu Miu') }
+  scope :vogue, -> { where(brand: 'Vogue') }
 end
