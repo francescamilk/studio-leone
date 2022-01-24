@@ -1,36 +1,16 @@
 <section id="index">
-  <div data-controller="refresh-list">
-    <div class="container">
-      <%# <h1>I nostri occhiali</h1> %>
-      <%
-=begin %>
-      <div>
-        <h4><%= link_to 'Tutti', glasses_path(s: 'all') %></h4>
-        <h4><%= link_to 'Da donna', glasses_path(s: 'women') %></h4>
-        <h4><%= link_to 'Da uomo', glasses_path(s: 'men') %></h4>
-      </div>
-      <div data-refresh-list-target="list">
-        <%= render 'list' %>
-      </div>
-      <%
-=end %>
-      <% @brands.each do |glasses| %>
-        <h3 class="indexBrand"><%= glasses.first.brand %></h3>
-        <div class="index-block">
-          <i data-feather="chevron-left"></i>
-          <div class="glass-cards">
-            <% glasses.take(4).each do |glass| %>
-              <div class="glass-card">
-                <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg1" alt="<%= glass.sku %>">
-                <h4 class="card-text"><%= glass.brand %> <%= glass.name %> <i data-feather="plus"></i></h4>
-                <h4>€<%= glass.price %></h4>
-              </div>
-            <% end %>
+  <div class="container">
+    <div class="indexLeft"></div>
+    <div class="indexRight">
+      <div class="glass-cards">
+        <% @glasses.each do |glass| %>
+          <div class="glass-card">
+            <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg1" alt="<%= glass.sku %>">
+            <h4 class="card-text"><%= glass.brand %> <%= glass.name %> <i data-feather="plus"></i></h4>
+            <h4>€<%= glass.price %></h4>
           </div>
-          <i data-feather="chevron-right"></i>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 </section>
