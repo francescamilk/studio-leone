@@ -11,12 +11,16 @@ module ApplicationHelper
     controller_name == 'glasses' && action_name == 'show'
   end
 
+  def glass_index?
+    controller_name == 'glasses' && action_name == 'index'
+  end
+
   def no_navbar?
     admin_dash? || glass_form? || glass_show?
   end
 
   def no_footer?
-    admin_dash? || glass_form? || glass_show?
+    admin_dash? || glass_form? || glass_show? || glass_index?
   end
 
   # def no_background?
