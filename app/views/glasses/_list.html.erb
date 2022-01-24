@@ -1,14 +1,11 @@
-<div class="index-grid">
+<div class="glassCards">
   <% @glasses.each do |glass| %>
-    <div class="index-card">
-      <li>
-        <%= link_to glass_path(glass) do %>
-          <%= glass.sku %> | 
-          <%= glass.name %> | 
-          <%= glass.brand %> |
-          <%= glass.sunglasses? ? "Da sole" : "Da vista" %>
-        <% end %>
-      </li>
+    <div class="glassCard">
+      <%= link_to glass_path(glass) do %>
+        <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg" alt="<%= glass.sku %>">
+        <h4><%= glass.brand %> <%= glass.name %></h4>
+        <h4>€<%= glass.price %></h4>
+      <% end %>
     </div>
   <% end %>
 </div>

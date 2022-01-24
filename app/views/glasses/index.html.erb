@@ -6,6 +6,24 @@
         <div class="accordionFilter">
           <div class="filterContent">
             <div class="afLabel">
+              <h4>Tipo</h4>
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="afContent">
+              <p>#TODO: form</p>
+            </div>
+          </div>
+          <div class="filterContent">
+            <div class="afLabel">
+              <h4>Genere</h4>
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="afContent">
+              <p>#TODO: form</p>
+            </div>
+          </div>
+          <div class="filterContent">
+            <div class="afLabel">
               <h4>Brand</h4>
               <i data-feather="chevron-down"></i>
             </div>
@@ -35,19 +53,13 @@
       </div>
     </div>
     <div class="indexRight">
-      <h1>I nostri occhiali</h1>
-      <div class="glassCards">
-        <% @glasses.each do |glass| %>
-          <div class="glassCard">
-            <%= link_to glass_path(glass) do %>
-              <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg" alt="<%= glass.sku %>">
-              <h4><%= glass.brand %> <%= glass.name %></h4>
-              <h4>€<%= glass.price %></h4>
-            <% end %>
-          </div>
-        <% end %>
+      <div data-controller="refresh-list">
+        <h1>I nostri occhiali</h1>
+        <div data-refresh-list-target="list">
+          <%= render 'list' %>
+        </div>
+        <div class="pagyNav"><%== pagy_nav(@pagy).html_safe%></div>
       </div>
-      <div class="pagyNav"><%== pagy_nav(@pagy).html_safe%></div>
     </div>
   </div>
 </section>

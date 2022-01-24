@@ -3,16 +3,7 @@ class GlassesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   
   def index
-    @pagy, @glasses = pagy(Glass.all.order(:brand), items: 18)
-
-
-    # case params[:s]
-    # when "all" then @glasses
-    # when "sun" then @glasses = @glasses.sun
-    # when "sight" then @glasses = @glasses.sight
-    # when "women" then @glasses = @glasses.women
-    # when "men" then @glasses = @glasses.men
-    # end
+    @pagy, @glasses = pagy(Glass.all.order(:brand), items: 15)
 
     respond_to do |format|
       format.html
