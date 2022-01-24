@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include Pagy::Frontend
+
   def admin_dash? 
     controller_name == 'pages' && action_name == 'dashboard'
   end
