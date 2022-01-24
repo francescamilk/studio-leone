@@ -3,10 +3,25 @@
 }
 
 .indexLeft {
-  width: 15vw;
+  width: 12vw;
   background: red;
 }
 
 .indexRight {
-  width: 85vw;
+  width: 73vw;
+}
+
+.glass-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.glass-card {
+  text-align: center;
+  padding-bottom: 7rem;
+  cursor: pointer;
+}
+
+#glassCardImg {
+  width: 33rem;
 }

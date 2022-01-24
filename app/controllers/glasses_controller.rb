@@ -3,8 +3,7 @@ class GlassesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   
   def index
-    @glasses = Glass.all
-    @brands = [Glass.armani, Glass.vogue]
+    @glasses = Glass.all.order(:brand)
 
     # case params[:s]
     # when "all" then @glasses

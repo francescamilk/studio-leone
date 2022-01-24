@@ -5,9 +5,11 @@
       <div class="glass-cards">
         <% @glasses.each do |glass| %>
           <div class="glass-card">
-            <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg1" alt="<%= glass.sku %>">
-            <h4 class="card-text"><%= glass.brand %> <%= glass.name %> <i data-feather="plus"></i></h4>
-            <h4>€<%= glass.price %></h4>
+            <%= link_to glass_path(glass) do %>
+              <img src="<%= cl_image_path glass.photos[0].key %>" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'" id="glassCardImg" alt="<%= glass.sku %>">
+              <h4><%= glass.brand %> <%= glass.name %></h4>
+              <h4>€<%= glass.price %></h4>
+            <% end %>
           </div>
         <% end %>
       </div>
