@@ -39,13 +39,40 @@
   }
 }
 
-.pagyNav {
-  padding-top: $smallSpace;
-  margin-bottom: -$medSpace;
-}
-
 #glassCardImg {
   width: 32rem;
+}
+
+#filterPin {
+  width: 2rem;
+  position: fixed;
+  left: 17rem;
+  top: 10rem;
+}
+
+// PAGY
+nav {
+  height: 10vh;
+  width: 66vw;
+    
+  @include flexBetween;
+}
+
+.pagyNav {
+  padding-top: 10rem;
+  margin-bottom: -8rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 71vw;
+}
+
+.page:hover {
+  color: $SLred;
+}
+
+.active {
+  color: $SLred;
+  font-weight: bold;
 }
 
 // ACCORDION
@@ -77,11 +104,11 @@
   }
 }
 
-.active {
+.activateAcc {
   height: 10rem;
 }
 
-.active {
+.activateAcc {
   .afContent {
     height: 10rem !important;
   }
