@@ -114,12 +114,14 @@
 
 .glass-card {
   padding: 2rem 5rem;
+  z-index: 10001;
+  cursor: pointer;
 }
 
 .card-text {
   @include flexCenter;
 }
 
-#glassCardImg {
+#glassCardImg1 {
   width: 35rem;
 }

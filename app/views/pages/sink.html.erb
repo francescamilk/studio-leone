@@ -5,7 +5,7 @@
     <div class="glass-cards">
       <% @glasses.take(4).each do |glass| %>
         <div class="glass-card">
-          <%= image_tag(glass.photos.first, id: 'glassCardImg') %>
+          <img src="<%= cl_image_path glass.photos[0].key %>" alt="" id="glassCardImg1" onmouseover="this.src='<%= cl_image_path glass.photos[1].key %>'" onmouseout="this.src='<%= cl_image_path glass.photos[0].key %>'">
           <h4 class="card-text"><%= glass.brand %> <%= glass.name %> <i data-feather="plus"></i></h4>
           <h4>€<%= glass.price %></h4>
         </div>

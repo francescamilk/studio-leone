@@ -12,6 +12,11 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+// Plugins
+
+// document.addEventListener('turbolinks:load', () => {
+// });
+
 // Stimulus
 import "controllers"
 
