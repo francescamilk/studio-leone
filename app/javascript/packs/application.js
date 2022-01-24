@@ -13,9 +13,11 @@ Turbolinks.start()
 ActiveStorage.start()
 
 // Plugins
+import { initAccordion } from '../plugins/initAccordion';
 
-// document.addEventListener('turbolinks:load', () => {
-// });
+document.addEventListener('turbolinks:load', () => {
+  initAccordion();
+});
 
 // Stimulus
 import "controllers"

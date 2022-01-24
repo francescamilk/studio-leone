@@ -20,7 +20,7 @@ module ApplicationHelper
   end
 
   def no_footer?
-    admin_dash? || glass_form? || glass_show? || glass_index?
+    admin_dash? || glass_form? || glass_show? 
   end
 
   # def no_background?
