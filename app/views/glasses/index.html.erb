@@ -56,10 +56,10 @@
     <div class="indexRight">
       <div data-controller="refresh-list">
         <h1>I nostri occhiali</h1>
-        <div data-refresh-list-target="list">
+        <div data-refresh-list-target="list" id="horizontalContainer">
           <%= render 'list' %>
         </div>
-        <div class="pagyNav"><%== pagy_nav(@pagy).html_safe%></div>
+        <%# <div class="pagyNav"><%== pagy_nav(@pagy).html_safe%><%# </div> %>
       </div>
     </div>
   </div>

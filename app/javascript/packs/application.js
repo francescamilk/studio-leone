@@ -14,9 +14,11 @@ ActiveStorage.start()
 
 // Plugins
 import { initAccordion } from '../plugins/initAccordion';
+import { initHorizontalScroll } from '../plugins/initHorizontalScroll';
 
 document.addEventListener('turbolinks:load', () => {
   initAccordion();
+  initHorizontalScroll();
 });
 
 // Stimulus

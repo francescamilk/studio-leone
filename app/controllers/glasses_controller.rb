@@ -3,7 +3,8 @@ class GlassesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   
   def index
-    @pagy, @glasses = pagy(Glass.all.order(:brand), items: 15)
+    # @pagy, @glasses = pagy(Glass.all.order(:brand), items: 15)
+    @glasses = Glass.all.order(:brand)
 
     respond_to do |format|
       format.html
