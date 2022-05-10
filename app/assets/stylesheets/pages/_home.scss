@@ -25,7 +25,9 @@
 
 .compoLeft,
 .compoRight {
-  display: flex;
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(5, 1fr); 
   margin: $smallSpace 0;
 }
 
@@ -138,6 +140,8 @@
 
   iframe {
     margin: $smallSpace 0 $bigSpace;
+    position: relative;
+    z-index: 1001;
   }
 }
 
