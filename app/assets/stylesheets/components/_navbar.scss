@@ -10,17 +10,13 @@
   display: inline-block;
   margin-left: 2rem;
   font-size: 1.2rem;
-
+  
   &:hover {
     color: $SLred;
-    font-size: 1.4rem;
     border-bottom: 1.5px $SLyellow solid;
+    padding-top: .2rem;
   }
 }
-
-// #logo {
-//   width: 8rem;
-// }
 
 #logoIcon {
   fill: $SLblue;
